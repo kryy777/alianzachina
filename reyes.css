@@ -1,0 +1,239 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    background-image: url(https://en.idei.club/uploads/posts/2023-06/1687594929_en-idei-club-p-chinese-style-background-dizain-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #cc0000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+#dragon {
+    width: 100px;
+    height: 100px;
+}
+
+#alianza {
+    font-family: 'Karate';
+    text-align: center;
+    margin: 5px 0;
+}
+
+#riquezas {
+    font-size: 36px;
+}
+
+#contenido1, #contenido2 {
+    font-size: 20px; 
+    width: 50%;
+    margin: 0 auto 20px; 
+    text-align: center; 
+}
+
+#contenido2 {
+    margin-top: 20px; 
+}
+#imagencontent1, #imagencontent2 {
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; 
+}
+
+#imagencontent1 img, #imagencontent2 img {
+    width: 100%; 
+    height: auto; 
+}
+
+@font-face {
+    font-family: 'Karate';
+    src: url(/fuentes/Karate.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+nav {
+    background-color: #333333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #cc0000;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    background-color: #ffcc00;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.image-container img {
+    width: 300px; 
+    height: 200px; 
+    border: 2px solid #cc0000;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: none;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.image-wrapper:hover .tooltip {
+    display: block;
+    opacity: 1;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    #dragon {
+        height: 80px;
+        width: 80px;
+    }
+
+    #riquezas {
+        font-size: 24px; 
+    }
+
+    #contenido1, #contenido2 {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #contenido2 {
+        margin-top: 10px; 
+    }
+
+    #imagencontent1, #imagencontent2 {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    #imagencontent1 img, #imagencontent2 img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #riquezas {
+        font-size: 20px; 
+    }
+
+    #contenido1, #contenido2 {
+        font-size: 16px; 
+    }
+
+    #imagencontent1 img, #imagencontent2 img {
+        width: 100%;
+    }
+}
+
+#footer {
+    font-family: 'Karate';
+}
+#riquezas {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 36px; 
+}
+
+#corona {
+    width: 60px; 
+    height: auto;
+    margin-left: 10px; 
+}
+
+/* PROGRAMACION 2024 - 4C */
